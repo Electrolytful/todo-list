@@ -1,3 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.createTask {
+  height: 30vh;
+  background-color: rgba(10, 138, 219, 1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.task {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.task button {
+  margin-left: 20px;
   text-align: center;
+}
+
+
+input {
+  height: 30px;
+  width: 600px;
+  margin-right: 15px;
+}
+
+button {
+  border: none;
+  font-size: 15px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+h1 {
+  display: inline;
 }
